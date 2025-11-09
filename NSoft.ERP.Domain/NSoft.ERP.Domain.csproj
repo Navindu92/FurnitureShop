@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C769518-0DA6-49D7-B944-E348874E863E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSoft.ERP.Domain</RootNamespace>
+    <AssemblyName>NSoft.ERP.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Extended, Version=6.0.0.0, Culture=neutral, PublicKeyToken=05b7e29bdd433584, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.168\lib\net45\EntityFramework.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MoreLinq">
+      <HintPath>..\packages\morelinq.2.3.0\lib\net35\MoreLinq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\ChequeBookEntry.cs" />
+    <Compile Include="Accounts\PaymentMain.cs" />
+    <Compile Include="Accounts\PaymentSub.cs" />
+    <Compile Include="CRM\LoyaltyCard.cs" />
+    <Compile Include="CRM\LoyaltyCustomer.cs" />
+    <Compile Include="CRM\LoyaltyTransaction.cs" />
+    <Compile Include="General\Bank.cs" />
+    <Compile Include="General\BaseEntity.cs" />
+    <Compile Include="General\Counter.cs" />
+    <Compile Include="General\CounterConfiguration.cs" />
+    <Compile Include="General\CounterTransaction.cs" />
+    <Compile Include="General\CounterTransactionFloat.cs" />
+    <Compile Include="General\DrawerTransaction.cs" />
+    <Compile Include="General\FloatMaster.cs" />
+    <Compile Include="General\FormInfo.cs" />
+    <Compile Include="General\GroupOfCompany.cs" />
+    <Compile Include="General\Location.cs" />
+    <Compile Include="General\NumberSetup.cs" />
+    <Compile Include="General\PaidInPaidOutMain.cs" />
+    <Compile Include="General\PaidInPaidOutSub.cs" />
+    <Compile Include="General\PaidInPaidOutTemp.cs" />
+    <Compile Include="General\PaidOutType.cs" />
+    <Compile Include="General\PaidInType.cs" />
+    <Compile Include="General\PayType.cs" />
+    <Compile Include="General\RCounterSummary.cs" />
+    <Compile Include="General\ReferenceInfo.cs" />
+    <Compile Include="General\SystemConfiguration.cs" />
+    <Compile Include="General\User.cs" />
+    <Compile Include="General\UserGroup.cs" />
+    <Compile Include="General\UserPrivileges.cs" />
+    <Compile Include="General\UserPrivilegesLocation.cs" />
+    <Compile Include="GiftVoucher\GiftVoucherBook.cs" />
+    <Compile Include="GiftVoucher\GiftVoucherGroup.cs" />
+    <Compile Include="GiftVoucher\GiftVoucherMaster.cs" />
+    <Compile Include="Inventory\BarcodeTemp.cs" />
+    <Compile Include="Inventory\Salesman.cs" />
+    <Compile Include="Inventory\Cashier.cs" />
+    <Compile Include="Inventory\CashierFunction.cs" />
+    <Compile Include="Inventory\CashierPrivileges.cs" />
+    <Compile Include="Inventory\Customer.cs" />
+    <Compile Include="Inventory\Item.cs" />
+    <Compile Include="Inventory\ItemCodeDependency.cs" />
+    <Compile Include="Inventory\ItemPrice.cs" />
+    <Compile Include="Inventory\ItemStock.cs" />
+    <Compile Include="Inventory\ItemSupplier.cs" />
+    <Compile Include="Inventory\Menu.cs" />
+    <Compile Include="Inventory\PurchaseOrderMain.cs" />
+    <Compile Include="Inventory\PurchaseOrderSub.cs" />
+    <Compile Include="Inventory\SalesPayment.cs" />
+    <Compile Include="Inventory\SalesHold.cs" />
+    <Compile Include="Inventory\StockAdjustmentMain.cs" />
+    <Compile Include="Inventory\OpeningStockMain.cs" />
+    <Compile Include="Inventory\OpeningStockSub.cs" />
+    <Compile Include="Inventory\OpeningStockTemp.cs" />
+    <Compile Include="Inventory\PurchaseMain.cs" />
+    <Compile Include="Inventory\PurchaseTemp.cs" />
+    <Compile Include="Inventory\SalesMain.cs" />
+    <Compile Include="Inventory\PurchaseSub.cs" />
+    <Compile Include="Inventory\SalesOrderMain.cs" />
+    <Compile Include="Inventory\SalesOrderSub.cs" />
+    <Compile Include="Inventory\SalesSub.cs" />
+    <Compile Include="Inventory\SalesTemp.cs" />
+    <Compile Include="Inventory\StockAdjustmentSub.cs" />
+    <Compile Include="Inventory\StockAdjustmentTemp.cs" />
+    <Compile Include="Inventory\SubCategory2.cs" />
+    <Compile Include="Inventory\SubCategory1.cs" />
+    <Compile Include="Inventory\Category.cs" />
+    <Compile Include="Inventory\CustomerGroup.cs" />
+    <Compile Include="Inventory\Supplier.cs" />
+    <Compile Include="Inventory\Brand.cs" />
+    <Compile Include="Inventory\SupplierGroup.cs" />
+    <Compile Include="Log\MasterFileLog.cs" />
+    <Compile Include="Log\SystemLog.cs" />
+    <Compile Include="Log\TransactionLog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NSoft.ERP.Utility\NSoft.ERP.Utility.csproj">
+      <Project>{5e842388-42ec-4005-b5a0-672ec074fec1}</Project>
+      <Name>NSoft.ERP.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

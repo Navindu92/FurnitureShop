@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSLaboratoryReport" targetNamespace="http://tempuri.org/DSLaboratoryReport.xsd" xmlns:mstns="http://tempuri.org/DSLaboratoryReport.xsd" xmlns="http://tempuri.org/DSLaboratoryReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSLaboratoryReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSLaboratoryReport" msprop:Generator_UserDSName="DSLaboratoryReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPatientData" msprop:Generator_TableClassName="dtPatientDataDataTable" msprop:Generator_TableVarName="tabledtPatientData" msprop:Generator_RowChangedName="dtPatientDataRowChanged" msprop:Generator_TablePropName="dtPatientData" msprop:Generator_RowDeletingName="dtPatientDataRowDeleting" msprop:Generator_RowChangingName="dtPatientDataRowChanging" msprop:Generator_RowEvHandlerName="dtPatientDataRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPatientDataRowDeleted" msprop:Generator_RowClassName="dtPatientDataRow" msprop:Generator_UserTableName="dtPatientData" msprop:Generator_RowEvArgName="dtPatientDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DocumentNo" msprop:Generator_ColumnVarNameInTable="columnDocumentNo" msprop:Generator_ColumnPropNameInRow="DocumentNo" msprop:Generator_ColumnPropNameInTable="DocumentNoColumn" msprop:Generator_UserColumnName="DocumentNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PatientName" msprop:Generator_ColumnVarNameInTable="columnPatientName" msprop:Generator_ColumnPropNameInRow="PatientName" msprop:Generator_ColumnPropNameInTable="PatientNameColumn" msprop:Generator_UserColumnName="PatientName" type="xs:string" minOccurs="0" />
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:string" minOccurs="0" />
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:string" minOccurs="0" />
+              <xs:element name="AgeType" msprop:Generator_ColumnVarNameInTable="columnAgeType" msprop:Generator_ColumnPropNameInRow="AgeType" msprop:Generator_ColumnPropNameInTable="AgeTypeColumn" msprop:Generator_UserColumnName="AgeType" type="xs:string" minOccurs="0" />
+              <xs:element name="LabReferenceNo" msprop:Generator_ColumnVarNameInTable="columnLabReferenceNo" msprop:Generator_ColumnPropNameInRow="LabReferenceNo" msprop:Generator_ColumnPropNameInTable="LabReferenceNoColumn" msprop:Generator_UserColumnName="LabReferenceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Doctor" msprop:Generator_ColumnVarNameInTable="columnDoctor" msprop:Generator_ColumnPropNameInRow="Doctor" msprop:Generator_ColumnPropNameInTable="DoctorColumn" msprop:Generator_UserColumnName="Doctor" type="xs:string" minOccurs="0" />
+              <xs:element name="Institution" msprop:Generator_ColumnVarNameInTable="columnInstitution" msprop:Generator_ColumnPropNameInRow="Institution" msprop:Generator_ColumnPropNameInTable="InstitutionColumn" msprop:Generator_UserColumnName="Institution" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtFBS" msprop:Generator_TableClassName="dtFBSDataTable" msprop:Generator_TableVarName="tabledtFBS" msprop:Generator_RowChangedName="dtFBSRowChanged" msprop:Generator_TablePropName="dtFBS" msprop:Generator_RowDeletingName="dtFBSRowDeleting" msprop:Generator_RowChangingName="dtFBSRowChanging" msprop:Generator_RowEvHandlerName="dtFBSRowChangeEventHandler" msprop:Generator_RowDeletedName="dtFBSRowDeleted" msprop:Generator_RowClassName="dtFBSRow" msprop:Generator_UserTableName="dtFBS" msprop:Generator_RowEvArgName="dtFBSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnFastingBloodSugar" msprop:Generator_ColumnPropNameInRow="FastingBloodSugar" msprop:Generator_ColumnPropNameInTable="FastingBloodSugarColumn" msprop:Generator_UserColumnName="FastingBloodSugar" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRBS" msprop:Generator_TableClassName="dtRBSDataTable" msprop:Generator_TableVarName="tabledtRBS" msprop:Generator_TablePropName="dtRBS" msprop:Generator_RowDeletingName="dtRBSRowDeleting" msprop:Generator_RowChangingName="dtRBSRowChanging" msprop:Generator_RowEvHandlerName="dtRBSRowChangeEventHandler" msprop:Generator_RowDeletedName="dtRBSRowDeleted" msprop:Generator_UserTableName="dtRBS" msprop:Generator_RowChangedName="dtRBSRowChanged" msprop:Generator_RowEvArgName="dtRBSRowChangeEvent" msprop:Generator_RowClassName="dtRBSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RandomBloodSugar" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnRandomBloodSugar" msprop:Generator_ColumnPropNameInRow="RandomBloodSugar" msprop:Generator_ColumnPropNameInTable="RandomBloodSugarColumn" msprop:Generator_UserColumnName="RandomBloodSugar" type="xs:long" minOccurs="0" />
+              <xs:element name="RandomTime" msprop:Generator_ColumnVarNameInTable="columnRandomTime" msprop:Generator_ColumnPropNameInRow="RandomTime" msprop:Generator_ColumnPropNameInTable="RandomTimeColumn" msprop:Generator_UserColumnName="RandomTime" type="xs:duration" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtGCT" msprop:Generator_TableClassName="dtGCTDataTable" msprop:Generator_TableVarName="tabledtGCT" msprop:Generator_TablePropName="dtGCT" msprop:Generator_RowDeletingName="dtGCTRowDeleting" msprop:Generator_RowChangingName="dtGCTRowChanging" msprop:Generator_RowEvHandlerName="dtGCTRowChangeEventHandler" msprop:Generator_RowDeletedName="dtGCTRowDeleted" msprop:Generator_UserTableName="dtGCT" msprop:Generator_RowChangedName="dtGCTRowChanged" msprop:Generator_RowEvArgName="dtGCTRowChangeEvent" msprop:Generator_RowClassName="dtGCTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GlucoseChallenge" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnGlucoseChallenge" msprop:Generator_ColumnPropNameInRow="GlucoseChallenge" msprop:Generator_ColumnPropNameInTable="GlucoseChallengeColumn" msprop:Generator_UserColumnName="GlucoseChallenge" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtHBA1C" msprop:Generator_TableClassName="dtHBA1CDataTable" msprop:Generator_TableVarName="tabledtHBA1C" msprop:Generator_TablePropName="dtHBA1C" msprop:Generator_RowDeletingName="dtHBA1CRowDeleting" msprop:Generator_RowChangingName="dtHBA1CRowChanging" msprop:Generator_RowEvHandlerName="dtHBA1CRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHBA1CRowDeleted" msprop:Generator_UserTableName="dtHBA1C" msprop:Generator_RowChangedName="dtHBA1CRowChanged" msprop:Generator_RowEvArgName="dtHBA1CRowChangeEvent" msprop:Generator_RowClassName="dtHBA1CRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HemoglobinA1c" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnHemoglobinA1c" msprop:Generator_ColumnPropNameInRow="HemoglobinA1c" msprop:Generator_ColumnPropNameInTable="HemoglobinA1cColumn" msprop:Generator_UserColumnName="HemoglobinA1c" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSGOT" msprop:Generator_TableClassName="dtSGOTDataTable" msprop:Generator_TableVarName="tabledtSGOT" msprop:Generator_TablePropName="dtSGOT" msprop:Generator_RowDeletingName="dtSGOTRowDeleting" msprop:Generator_RowChangingName="dtSGOTRowChanging" msprop:Generator_RowEvHandlerName="dtSGOTRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSGOTRowDeleted" msprop:Generator_UserTableName="dtSGOT" msprop:Generator_RowChangedName="dtSGOTRowChanged" msprop:Generator_RowEvArgName="dtSGOTRowChangeEvent" msprop:Generator_RowClassName="dtSGOTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SGOT" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnSGOT" msprop:Generator_ColumnPropNameInRow="SGOT" msprop:Generator_ColumnPropNameInTable="SGOTColumn" msprop:Generator_UserColumnName="SGOT" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSGPT" msprop:Generator_TableClassName="dtSGPTDataTable" msprop:Generator_TableVarName="tabledtSGPT" msprop:Generator_TablePropName="dtSGPT" msprop:Generator_RowDeletingName="dtSGPTRowDeleting" msprop:Generator_RowChangingName="dtSGPTRowChanging" msprop:Generator_RowEvHandlerName="dtSGPTRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSGPTRowDeleted" msprop:Generator_UserTableName="dtSGPT" msprop:Generator_RowChangedName="dtSGPTRowChanged" msprop:Generator_RowEvArgName="dtSGPTRowChangeEvent" msprop:Generator_RowClassName="dtSGPTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SGPT" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnSGPT" msprop:Generator_ColumnPropNameInRow="SGPT" msprop:Generator_ColumnPropNameInTable="SGPTColumn" msprop:Generator_UserColumnName="SGPT" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtUrea" msprop:Generator_TableClassName="dtUreaDataTable" msprop:Generator_TableVarName="tabledtUrea" msprop:Generator_TablePropName="dtUrea" msprop:Generator_RowDeletingName="dtUreaRowDeleting" msprop:Generator_RowChangingName="dtUreaRowChanging" msprop:Generator_RowEvHandlerName="dtUreaRowChangeEventHandler" msprop:Generator_RowDeletedName="dtUreaRowDeleted" msprop:Generator_UserTableName="dtUrea" msprop:Generator_RowChangedName="dtUreaRowChanged" msprop:Generator_RowEvArgName="dtUreaRowChangeEvent" msprop:Generator_RowClassName="dtUreaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Urea" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnUrea" msprop:Generator_ColumnPropNameInRow="Urea" msprop:Generator_ColumnPropNameInTable="UreaColumn" msprop:Generator_UserColumnName="Urea" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtALP" msprop:Generator_TableClassName="dtALPDataTable" msprop:Generator_TableVarName="tabledtALP" msprop:Generator_TablePropName="dtALP" msprop:Generator_RowDeletingName="dtALPRowDeleting" msprop:Generator_RowChangingName="dtALPRowChanging" msprop:Generator_RowEvHandlerName="dtALPRowChangeEventHandler" msprop:Generator_RowDeletedName="dtALPRowDeleted" msprop:Generator_UserTableName="dtALP" msprop:Generator_RowChangedName="dtALPRowChanged" msprop:Generator_RowEvArgName="dtALPRowChangeEvent" msprop:Generator_RowClassName="dtALPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ALP" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnALP" msprop:Generator_ColumnPropNameInRow="ALP" msprop:Generator_ColumnPropNameInTable="ALPColumn" msprop:Generator_UserColumnName="ALP" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtFBC" msprop:Generator_TableClassName="dtFBCDataTable" msprop:Generator_TableVarName="tabledtFBC" msprop:Generator_RowChangedName="dtFBCRowChanged" msprop:Generator_TablePropName="dtFBC" msprop:Generator_RowDeletingName="dtFBCRowDeleting" msprop:Generator_RowChangingName="dtFBCRowChanging" msprop:Generator_RowEvHandlerName="dtFBCRowChangeEventHandler" msprop:Generator_RowDeletedName="dtFBCRowDeleted" msprop:Generator_RowClassName="dtFBCRow" msprop:Generator_UserTableName="dtFBC" msprop:Generator_RowEvArgName="dtFBCRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Haemoglobin" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnHaemoglobin" msprop:Generator_ColumnPropNameInRow="Haemoglobin" msprop:Generator_ColumnPropNameInTable="HaemoglobinColumn" msprop:Generator_UserColumnName="Haemoglobin" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RBCCount" msprop:Generator_ColumnVarNameInTable="columnRBCCount" msprop:Generator_ColumnPropNameInRow="RBCCount" msprop:Generator_ColumnPropNameInTable="RBCCountColumn" msprop:Generator_UserColumnName="RBCCount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HCT" msprop:Generator_ColumnVarNameInTable="columnHCT" msprop:Generator_ColumnPropNameInRow="HCT" msprop:Generator_ColumnPropNameInTable="HCTColumn" msprop:Generator_UserColumnName="HCT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MCV" msprop:Generator_ColumnVarNameInTable="columnMCV" msprop:Generator_ColumnPropNameInRow="MCV" msprop:Generator_ColumnPropNameInTable="MCVColumn" msprop:Generator_UserColumnName="MCV" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MCH" msprop:Generator_ColumnVarNameInTable="columnMCH" msprop:Generator_ColumnPropNameInRow="MCH" msprop:Generator_ColumnPropNameInTable="MCHColumn" msprop:Generator_UserColumnName="MCH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MCHC" msprop:Generator_ColumnVarNameInTable="columnMCHC" msprop:Generator_ColumnPropNameInRow="MCHC" msprop:Generator_ColumnPropNameInTable="MCHCColumn" msprop:Generator_UserColumnName="MCHC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WBCCount" msprop:Generator_ColumnVarNameInTable="columnWBCCount" msprop:Generator_ColumnPropNameInRow="WBCCount" msprop:Generator_ColumnPropNameInTable="WBCCountColumn" msprop:Generator_UserColumnName="WBCCount" type="xs:long" minOccurs="0" />
+              <xs:element name="Neutrophils" msprop:Generator_ColumnVarNameInTable="columnNeutrophils" msprop:Generator_ColumnPropNameInRow="Neutrophils" msprop:Generator_ColumnPropNameInTable="NeutrophilsColumn" msprop:Generator_UserColumnName="Neutrophils" type="xs:long" minOccurs="0" />
+              <xs:element name="Lymphocytes" msprop:Generator_ColumnVarNameInTable="columnLymphocytes" msprop:Generator_ColumnPropNameInRow="Lymphocytes" msprop:Generator_ColumnPropNameInTable="LymphocytesColumn" msprop:Generator_UserColumnName="Lymphocytes" type="xs:long" minOccurs="0" />
+              <xs:element name="Monocytes" msprop:Generator_ColumnVarNameInTable="columnMonocytes" msprop:Generator_ColumnPropNameInRow="Monocytes" msprop:Generator_ColumnPropNameInTable="MonocytesColumn" msprop:Generator_UserColumnName="Monocytes" type="xs:long" minOccurs="0" />
+              <xs:element name="Eosinophils" msprop:Generator_ColumnVarNameInTable="columnEosinophils" msprop:Generator_ColumnPropNameInRow="Eosinophils" msprop:Generator_ColumnPropNameInTable="EosinophilsColumn" msprop:Generator_UserColumnName="Eosinophils" type="xs:long" minOccurs="0" />
+              <xs:element name="Besophils" msprop:Generator_ColumnVarNameInTable="columnBesophils" msprop:Generator_ColumnPropNameInRow="Besophils" msprop:Generator_ColumnPropNameInTable="BesophilsColumn" msprop:Generator_UserColumnName="Besophils" type="xs:long" minOccurs="0" />
+              <xs:element name="PlateletCount" msprop:Generator_ColumnVarNameInTable="columnPlateletCount" msprop:Generator_ColumnPropNameInRow="PlateletCount" msprop:Generator_ColumnPropNameInTable="PlateletCountColumn" msprop:Generator_UserColumnName="PlateletCount" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtUFR" msprop:Generator_TableClassName="dtUFRDataTable" msprop:Generator_TableVarName="tabledtUFR" msprop:Generator_TablePropName="dtUFR" msprop:Generator_RowDeletingName="dtUFRRowDeleting" msprop:Generator_RowChangingName="dtUFRRowChanging" msprop:Generator_RowEvHandlerName="dtUFRRowChangeEventHandler" msprop:Generator_RowDeletedName="dtUFRRowDeleted" msprop:Generator_UserTableName="dtUFR" msprop:Generator_RowChangedName="dtUFRRowChanged" msprop:Generator_RowEvArgName="dtUFRRowChangeEvent" msprop:Generator_RowClassName="dtUFRRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Colour" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnColour" msprop:Generator_ColumnPropNameInRow="Colour" msprop:Generator_ColumnPropNameInTable="ColourColumn" msprop:Generator_UserColumnName="Colour" type="xs:string" minOccurs="0" />
+              <xs:element name="Appearance" msdata:Caption="RBCCount" msprop:Generator_ColumnVarNameInTable="columnAppearance" msprop:Generator_ColumnPropNameInRow="Appearance" msprop:Generator_ColumnPropNameInTable="AppearanceColumn" msprop:Generator_UserColumnName="Appearance" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecificGravity" msdata:Caption="HCT" msprop:Generator_ColumnVarNameInTable="columnSpecificGravity" msprop:Generator_ColumnPropNameInRow="SpecificGravity" msprop:Generator_ColumnPropNameInTable="SpecificGravityColumn" msprop:Generator_UserColumnName="SpecificGravity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PH" msdata:Caption="MCV" msprop:Generator_ColumnVarNameInTable="columnPH" msprop:Generator_ColumnPropNameInRow="PH" msprop:Generator_ColumnPropNameInTable="PHColumn" msprop:Generator_UserColumnName="PH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Protein" msdata:Caption="MCH" msprop:Generator_ColumnVarNameInTable="columnProtein" msprop:Generator_ColumnPropNameInRow="Protein" msprop:Generator_ColumnPropNameInTable="ProteinColumn" msprop:Generator_UserColumnName="Protein" type="xs:string" minOccurs="0" />
+              <xs:element name="Sugar" msdata:Caption="MCHC" msprop:Generator_ColumnVarNameInTable="columnSugar" msprop:Generator_ColumnPropNameInRow="Sugar" msprop:Generator_ColumnPropNameInTable="SugarColumn" msprop:Generator_UserColumnName="Sugar" type="xs:string" minOccurs="0" />
+              <xs:element name="Ketones" msdata:Caption="WBCCount" msprop:Generator_ColumnVarNameInTable="columnKetones" msprop:Generator_ColumnPropNameInRow="Ketones" msprop:Generator_ColumnPropNameInTable="KetonesColumn" msprop:Generator_UserColumnName="Ketones" type="xs:string" minOccurs="0" />
+              <xs:element name="Bilirubin" msdata:Caption="Neutrophils" msprop:Generator_ColumnVarNameInTable="columnBilirubin" msprop:Generator_ColumnPropNameInRow="Bilirubin" msprop:Generator_ColumnPropNameInTable="BilirubinColumn" msprop:Generator_UserColumnName="Bilirubin" type="xs:string" minOccurs="0" />
+              <xs:element name="Urobilinogen" msdata:Caption="Lymphocytes" msprop:Generator_ColumnVarNameInTable="columnUrobilinogen" msprop:Generator_ColumnPropNameInRow="Urobilinogen" msprop:Generator_ColumnPropNameInTable="UrobilinogenColumn" msprop:Generator_UserColumnName="Urobilinogen" type="xs:string" minOccurs="0" />
+              <xs:element name="PusCells" msdata:Caption="Monocytes" msprop:Generator_ColumnVarNameInTable="columnPusCells" msprop:Generator_ColumnPropNameInRow="PusCells" msprop:Generator_ColumnPropNameInTable="PusCellsColumn" msprop:Generator_UserColumnName="PusCells" type="xs:string" minOccurs="0" />
+              <xs:element name="RedCells" msdata:Caption="Eosinophils" msprop:Generator_ColumnVarNameInTable="columnRedCells" msprop:Generator_ColumnPropNameInRow="RedCells" msprop:Generator_ColumnPropNameInTable="RedCellsColumn" msprop:Generator_UserColumnName="RedCells" type="xs:string" minOccurs="0" />
+              <xs:element name="EpithelialCells" msdata:Caption="Besophils" msprop:Generator_ColumnVarNameInTable="columnEpithelialCells" msprop:Generator_ColumnPropNameInRow="EpithelialCells" msprop:Generator_ColumnPropNameInTable="EpithelialCellsColumn" msprop:Generator_UserColumnName="EpithelialCells" type="xs:string" minOccurs="0" />
+              <xs:element name="Cast" msdata:Caption="PlateletCount" msprop:Generator_ColumnVarNameInTable="columnCast" msprop:Generator_ColumnPropNameInRow="Cast" msprop:Generator_ColumnPropNameInTable="CastColumn" msprop:Generator_UserColumnName="Cast" type="xs:string" minOccurs="0" />
+              <xs:element name="Crystals" msprop:Generator_ColumnVarNameInTable="columnCrystals" msprop:Generator_ColumnPropNameInRow="Crystals" msprop:Generator_ColumnPropNameInTable="CrystalsColumn" msprop:Generator_UserColumnName="Crystals" type="xs:string" minOccurs="0" />
+              <xs:element name="Organisms" msprop:Generator_ColumnVarNameInTable="columnOrganisms" msprop:Generator_ColumnPropNameInRow="Organisms" msprop:Generator_ColumnPropNameInTable="OrganismsColumn" msprop:Generator_UserColumnName="Organisms" type="xs:string" minOccurs="0" />
+              <xs:element name="Others" msprop:Generator_ColumnVarNameInTable="columnOthers" msprop:Generator_ColumnPropNameInRow="Others" msprop:Generator_ColumnPropNameInTable="OthersColumn" msprop:Generator_UserColumnName="Others" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtLipidProfile" msprop:Generator_TableClassName="dtLipidProfileDataTable" msprop:Generator_TableVarName="tabledtLipidProfile" msprop:Generator_RowChangedName="dtLipidProfileRowChanged" msprop:Generator_TablePropName="dtLipidProfile" msprop:Generator_RowDeletingName="dtLipidProfileRowDeleting" msprop:Generator_RowChangingName="dtLipidProfileRowChanging" msprop:Generator_RowEvHandlerName="dtLipidProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="dtLipidProfileRowDeleted" msprop:Generator_RowClassName="dtLipidProfileRow" msprop:Generator_UserTableName="dtLipidProfile" msprop:Generator_RowEvArgName="dtLipidProfileRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CholesterolTotal" msprop:Generator_ColumnVarNameInTable="columnCholesterolTotal" msprop:Generator_ColumnPropNameInRow="CholesterolTotal" msprop:Generator_ColumnPropNameInTable="CholesterolTotalColumn" msprop:Generator_UserColumnName="CholesterolTotal" type="xs:long" minOccurs="0" />
+              <xs:element name="CholesterolHDL" msprop:Generator_ColumnVarNameInTable="columnCholesterolHDL" msprop:Generator_ColumnPropNameInRow="CholesterolHDL" msprop:Generator_ColumnPropNameInTable="CholesterolHDLColumn" msprop:Generator_UserColumnName="CholesterolHDL" type="xs:long" minOccurs="0" />
+              <xs:element name="CholesterolLDL" msprop:Generator_ColumnVarNameInTable="columnCholesterolLDL" msprop:Generator_ColumnPropNameInRow="CholesterolLDL" msprop:Generator_ColumnPropNameInTable="CholesterolLDLColumn" msprop:Generator_UserColumnName="CholesterolLDL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Triglyceride" msprop:Generator_ColumnVarNameInTable="columnTriglyceride" msprop:Generator_ColumnPropNameInRow="Triglyceride" msprop:Generator_ColumnPropNameInTable="TriglycerideColumn" msprop:Generator_UserColumnName="Triglyceride" type="xs:long" minOccurs="0" />
+              <xs:element name="CholesterolVLDL" msprop:Generator_ColumnVarNameInTable="columnCholesterolVLDL" msprop:Generator_ColumnPropNameInRow="CholesterolVLDL" msprop:Generator_ColumnPropNameInTable="CholesterolVLDLColumn" msprop:Generator_UserColumnName="CholesterolVLDL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ratio" msprop:Generator_ColumnVarNameInTable="columnRatio" msprop:Generator_ColumnPropNameInRow="Ratio" msprop:Generator_ColumnPropNameInTable="RatioColumn" msprop:Generator_UserColumnName="Ratio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtESR" msprop:Generator_TableClassName="dtESRDataTable" msprop:Generator_TableVarName="tabledtESR" msprop:Generator_TablePropName="dtESR" msprop:Generator_RowDeletingName="dtESRRowDeleting" msprop:Generator_RowChangingName="dtESRRowChanging" msprop:Generator_RowEvHandlerName="dtESRRowChangeEventHandler" msprop:Generator_RowDeletedName="dtESRRowDeleted" msprop:Generator_UserTableName="dtESR" msprop:Generator_RowChangedName="dtESRRowChanged" msprop:Generator_RowEvArgName="dtESRRowChangeEvent" msprop:Generator_RowClassName="dtESRRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESR" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnESR" msprop:Generator_ColumnPropNameInRow="ESR" msprop:Generator_ColumnPropNameInTable="ESRColumn" msprop:Generator_UserColumnName="ESR" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCreatinine" msprop:Generator_TableClassName="dtCreatinineDataTable" msprop:Generator_TableVarName="tabledtCreatinine" msprop:Generator_RowChangedName="dtCreatinineRowChanged" msprop:Generator_TablePropName="dtCreatinine" msprop:Generator_RowDeletingName="dtCreatinineRowDeleting" msprop:Generator_RowChangingName="dtCreatinineRowChanging" msprop:Generator_RowEvHandlerName="dtCreatinineRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCreatinineRowDeleted" msprop:Generator_RowClassName="dtCreatinineRow" msprop:Generator_UserTableName="dtCreatinine" msprop:Generator_RowEvArgName="dtCreatinineRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Creatinine" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnCreatinine" msprop:Generator_ColumnPropNameInRow="Creatinine" msprop:Generator_ColumnPropNameInTable="CreatinineColumn" msprop:Generator_UserColumnName="Creatinine" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EstimatedGFR" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnEstimatedGFR" msprop:Generator_ColumnPropNameInRow="EstimatedGFR" msprop:Generator_ColumnPropNameInTable="EstimatedGFRColumn" msprop:Generator_UserColumnName="EstimatedGFR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtPPBS" msprop:Generator_TableClassName="dtPPBSDataTable" msprop:Generator_TableVarName="tabledtPPBS" msprop:Generator_TablePropName="dtPPBS" msprop:Generator_RowDeletingName="dtPPBSRowDeleting" msprop:Generator_RowChangingName="dtPPBSRowChanging" msprop:Generator_RowEvHandlerName="dtPPBSRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPPBSRowDeleted" msprop:Generator_UserTableName="dtPPBS" msprop:Generator_RowChangedName="dtPPBSRowChanged" msprop:Generator_RowEvArgName="dtPPBSRowChangeEvent" msprop:Generator_RowClassName="dtPPBSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PPBS" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnPPBS" msprop:Generator_ColumnPropNameInRow="PPBS" msprop:Generator_ColumnPropNameInTable="PPBSColumn" msprop:Generator_UserColumnName="PPBS" type="xs:long" minOccurs="0" />
+              <xs:element name="MealStatus" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnMealStatus" msprop:Generator_ColumnPropNameInRow="MealStatus" msprop:Generator_ColumnPropNameInTable="MealStatusColumn" msprop:Generator_UserColumnName="MealStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtHCG" msprop:Generator_TableClassName="dtHCGDataTable" msprop:Generator_TableVarName="tabledtHCG" msprop:Generator_RowChangedName="dtHCGRowChanged" msprop:Generator_TablePropName="dtHCG" msprop:Generator_RowDeletingName="dtHCGRowDeleting" msprop:Generator_RowChangingName="dtHCGRowChanging" msprop:Generator_RowEvHandlerName="dtHCGRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHCGRowDeleted" msprop:Generator_RowClassName="dtHCGRow" msprop:Generator_UserTableName="dtHCG" msprop:Generator_RowEvArgName="dtHCGRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Result" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCRP" msprop:Generator_TableClassName="dtCRPDataTable" msprop:Generator_TableVarName="tabledtCRP" msprop:Generator_TablePropName="dtCRP" msprop:Generator_RowDeletingName="dtCRPRowDeleting" msprop:Generator_RowChangingName="dtCRPRowChanging" msprop:Generator_RowEvHandlerName="dtCRPRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCRPRowDeleted" msprop:Generator_UserTableName="dtCRP" msprop:Generator_RowChangedName="dtCRPRowChanged" msprop:Generator_RowEvArgName="dtCRPRowChangeEvent" msprop:Generator_RowClassName="dtCRPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Result" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtWBCDC" msprop:Generator_TableClassName="dtWBCDCDataTable" msprop:Generator_TableVarName="tabledtWBCDC" msprop:Generator_RowChangedName="dtWBCDCRowChanged" msprop:Generator_TablePropName="dtWBCDC" msprop:Generator_RowDeletingName="dtWBCDCRowDeleting" msprop:Generator_RowChangingName="dtWBCDCRowChanging" msprop:Generator_RowEvHandlerName="dtWBCDCRowChangeEventHandler" msprop:Generator_RowDeletedName="dtWBCDCRowDeleted" msprop:Generator_RowClassName="dtWBCDCRow" msprop:Generator_UserTableName="dtWBCDC" msprop:Generator_RowEvArgName="dtWBCDCRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnWBCCountResult" msprop:Generator_ColumnPropNameInRow="WBCCountResult" msprop:Generator_ColumnPropNameInTable="WBCCountResultColumn" msprop:Generator_UserColumnName="WBCCountResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WBCCountUnit" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnWBCCountUnit" msprop:Generator_ColumnPropNameInRow="WBCCountUnit" msprop:Generator_ColumnPropNameInTable="WBCCountUnitColumn" msprop:Generator_UserColumnName="WBCCountUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WBCCountRemark" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnWBCCountRemark" msprop:Generator_ColumnPropNameInRow="WBCCountRemark" msprop:Generator_ColumnPropNameInTable="WBCCountRemarkColumn" msprop:Generator_UserColumnName="WBCCountRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="NeutrophilsResult" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnNeutrophilsResult" msprop:Generator_ColumnPropNameInRow="NeutrophilsResult" msprop:Generator_ColumnPropNameInTable="NeutrophilsResultColumn" msprop:Generator_UserColumnName="NeutrophilsResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NeutrophilsUnit" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnNeutrophilsUnit" msprop:Generator_ColumnPropNameInRow="NeutrophilsUnit" msprop:Generator_ColumnPropNameInTable="NeutrophilsUnitColumn" msprop:Generator_UserColumnName="NeutrophilsUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NeutrophilsRemark" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnNeutrophilsRemark" msprop:Generator_ColumnPropNameInRow="NeutrophilsRemark" msprop:Generator_ColumnPropNameInTable="NeutrophilsRemarkColumn" msprop:Generator_UserColumnName="NeutrophilsRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="LymphocytesResult" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnLymphocytesResult" msprop:Generator_ColumnPropNameInRow="LymphocytesResult" msprop:Generator_ColumnPropNameInTable="LymphocytesResultColumn" msprop:Generator_UserColumnName="LymphocytesResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LymphocytesUnit" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnLymphocytesUnit" msprop:Generator_ColumnPropNameInRow="LymphocytesUnit" msprop:Generator_ColumnPropNameInTable="LymphocytesUnitColumn" msprop:Generator_UserColumnName="LymphocytesUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LymphocytesRemark" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnLymphocytesRemark" msprop:Generator_ColumnPropNameInRow="LymphocytesRemark" msprop:Generator_ColumnPropNameInTable="LymphocytesRemarkColumn" msprop:Generator_UserColumnName="LymphocytesRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="MonocytesResult" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnMonocytesResult" msprop:Generator_ColumnPropNameInRow="MonocytesResult" msprop:Generator_ColumnPropNameInTable="MonocytesResultColumn" msprop:Generator_UserColumnName="MonocytesResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MonocytesUnit" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnMonocytesUnit" msprop:Generator_ColumnPropNameInRow="MonocytesUnit" msprop:Generator_ColumnPropNameInTable="MonocytesUnitColumn" msprop:Generator_UserColumnName="MonocytesUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MonocytesRemark" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnMonocytesRemark" msprop:Generator_ColumnPropNameInRow="MonocytesRemark" msprop:Generator_ColumnPropNameInTable="MonocytesRemarkColumn" msprop:Generator_UserColumnName="MonocytesRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="EosinophilsResult" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnEosinophilsResult" msprop:Generator_ColumnPropNameInRow="EosinophilsResult" msprop:Generator_ColumnPropNameInTable="EosinophilsResultColumn" msprop:Generator_UserColumnName="EosinophilsResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EosinophilsUnit" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnEosinophilsUnit" msprop:Generator_ColumnPropNameInRow="EosinophilsUnit" msprop:Generator_ColumnPropNameInTable="EosinophilsUnitColumn" msprop:Generator_UserColumnName="EosinophilsUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EosinophilsRemark" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnEosinophilsRemark" msprop:Generator_ColumnPropNameInRow="EosinophilsRemark" msprop:Generator_ColumnPropNameInTable="EosinophilsRemarkColumn" msprop:Generator_UserColumnName="EosinophilsRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="BesophilsResult" msdata:Caption="WBCCountResult" msprop:Generator_ColumnVarNameInTable="columnBesophilsResult" msprop:Generator_ColumnPropNameInRow="BesophilsResult" msprop:Generator_ColumnPropNameInTable="BesophilsResultColumn" msprop:Generator_UserColumnName="BesophilsResult" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BesophilsUnit" msprop:Generator_ColumnVarNameInTable="columnBesophilsUnit" msprop:Generator_ColumnPropNameInRow="BesophilsUnit" msprop:Generator_ColumnPropNameInTable="BesophilsUnitColumn" msprop:Generator_UserColumnName="BesophilsUnit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BesophilsRemark" msdata:Caption="BesophilsUnit" msprop:Generator_ColumnVarNameInTable="columnBesophilsRemark" msprop:Generator_ColumnPropNameInRow="BesophilsRemark" msprop:Generator_ColumnPropNameInTable="BesophilsRemarkColumn" msprop:Generator_UserColumnName="BesophilsRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtBloodGroupRH" msprop:Generator_TableClassName="dtBloodGroupRHDataTable" msprop:Generator_TableVarName="tabledtBloodGroupRH" msprop:Generator_RowChangedName="dtBloodGroupRHRowChanged" msprop:Generator_TablePropName="dtBloodGroupRH" msprop:Generator_RowDeletingName="dtBloodGroupRHRowDeleting" msprop:Generator_RowChangingName="dtBloodGroupRHRowChanging" msprop:Generator_RowEvHandlerName="dtBloodGroupRHRowChangeEventHandler" msprop:Generator_RowDeletedName="dtBloodGroupRHRowDeleted" msprop:Generator_RowClassName="dtBloodGroupRHRow" msprop:Generator_UserTableName="dtBloodGroupRH" msprop:Generator_RowEvArgName="dtBloodGroupRHRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" type="xs:string" minOccurs="0" />
+              <xs:element name="RH" msprop:Generator_ColumnVarNameInTable="columnRH" msprop:Generator_ColumnPropNameInRow="RH" msprop:Generator_ColumnPropNameInTable="RHColumn" msprop:Generator_UserColumnName="RH" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtHB" msprop:Generator_TableClassName="dtHBDataTable" msprop:Generator_TableVarName="tabledtHB" msprop:Generator_TablePropName="dtHB" msprop:Generator_RowDeletingName="dtHBRowDeleting" msprop:Generator_RowChangingName="dtHBRowChanging" msprop:Generator_RowEvHandlerName="dtHBRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHBRowDeleted" msprop:Generator_UserTableName="dtHB" msprop:Generator_RowChangedName="dtHBRowChanged" msprop:Generator_RowEvArgName="dtHBRowChangeEvent" msprop:Generator_RowClassName="dtHBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HB" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnHB" msprop:Generator_ColumnPropNameInRow="HB" msprop:Generator_ColumnPropNameInTable="HBColumn" msprop:Generator_UserColumnName="HB" type="xs:long" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtRH" msprop:Generator_TableClassName="dtRHDataTable" msprop:Generator_TableVarName="tabledtRH" msprop:Generator_RowChangedName="dtRHRowChanged" msprop:Generator_TablePropName="dtRH" msprop:Generator_RowDeletingName="dtRHRowDeleting" msprop:Generator_RowChangingName="dtRHRowChanging" msprop:Generator_RowEvHandlerName="dtRHRowChangeEventHandler" msprop:Generator_RowDeletedName="dtRHRowDeleted" msprop:Generator_RowClassName="dtRHRow" msprop:Generator_UserTableName="dtRH" msprop:Generator_RowEvArgName="dtRHRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Result" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtLiverProfile" msprop:Generator_TableClassName="dtLiverProfileDataTable" msprop:Generator_TableVarName="tabledtLiverProfile" msprop:Generator_RowChangedName="dtLiverProfileRowChanged" msprop:Generator_TablePropName="dtLiverProfile" msprop:Generator_RowDeletingName="dtLiverProfileRowDeleting" msprop:Generator_RowChangingName="dtLiverProfileRowChanging" msprop:Generator_RowEvHandlerName="dtLiverProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="dtLiverProfileRowDeleted" msprop:Generator_RowClassName="dtLiverProfileRow" msprop:Generator_UserTableName="dtLiverProfile" msprop:Generator_RowEvArgName="dtLiverProfileRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SGOT" msprop:Generator_ColumnVarNameInTable="columnSGOT" msprop:Generator_ColumnPropNameInRow="SGOT" msprop:Generator_ColumnPropNameInTable="SGOTColumn" msprop:Generator_UserColumnName="SGOT" type="xs:long" minOccurs="0" />
+              <xs:element name="SGPT" msprop:Generator_ColumnVarNameInTable="columnSGPT" msprop:Generator_ColumnPropNameInRow="SGPT" msprop:Generator_ColumnPropNameInTable="SGPTColumn" msprop:Generator_UserColumnName="SGPT" type="xs:long" minOccurs="0" />
+              <xs:element name="GammaGT" msprop:Generator_ColumnVarNameInTable="columnGammaGT" msprop:Generator_ColumnPropNameInRow="GammaGT" msprop:Generator_ColumnPropNameInTable="GammaGTColumn" msprop:Generator_UserColumnName="GammaGT" type="xs:long" minOccurs="0" />
+              <xs:element name="ALKPhosphatase" msprop:Generator_ColumnVarNameInTable="columnALKPhosphatase" msprop:Generator_ColumnPropNameInRow="ALKPhosphatase" msprop:Generator_ColumnPropNameInTable="ALKPhosphataseColumn" msprop:Generator_UserColumnName="ALKPhosphatase" type="xs:long" minOccurs="0" />
+              <xs:element name="TotalBilirubin" msprop:Generator_ColumnVarNameInTable="columnTotalBilirubin" msprop:Generator_ColumnPropNameInRow="TotalBilirubin" msprop:Generator_ColumnPropNameInTable="TotalBilirubinColumn" msprop:Generator_UserColumnName="TotalBilirubin" type="xs:long" minOccurs="0" />
+              <xs:element name="TotalProtein" msprop:Generator_ColumnVarNameInTable="columnTotalProtein" msprop:Generator_ColumnPropNameInRow="TotalProtein" msprop:Generator_ColumnPropNameInTable="TotalProteinColumn" msprop:Generator_UserColumnName="TotalProtein" type="xs:long" minOccurs="0" />
+              <xs:element name="ALBumin" msprop:Generator_ColumnVarNameInTable="columnALBumin" msprop:Generator_ColumnPropNameInRow="ALBumin" msprop:Generator_ColumnPropNameInTable="ALBuminColumn" msprop:Generator_UserColumnName="ALBumin" type="xs:long" minOccurs="0" />
+              <xs:element name="Globulin" msprop:Generator_ColumnVarNameInTable="columnGlobulin" msprop:Generator_ColumnPropNameInRow="Globulin" msprop:Generator_ColumnPropNameInTable="GlobulinColumn" msprop:Generator_UserColumnName="Globulin" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGRatio" msprop:Generator_ColumnVarNameInTable="columnAGRatio" msprop:Generator_ColumnPropNameInRow="AGRatio" msprop:Generator_ColumnPropNameInTable="AGRatioColumn" msprop:Generator_UserColumnName="AGRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCholesterol" msprop:Generator_TableClassName="dtCholesterolDataTable" msprop:Generator_TableVarName="tabledtCholesterol" msprop:Generator_TablePropName="dtCholesterol" msprop:Generator_RowDeletingName="dtCholesterolRowDeleting" msprop:Generator_RowChangingName="dtCholesterolRowChanging" msprop:Generator_RowEvHandlerName="dtCholesterolRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCholesterolRowDeleted" msprop:Generator_UserTableName="dtCholesterol" msprop:Generator_RowChangedName="dtCholesterolRowChanged" msprop:Generator_RowEvArgName="dtCholesterolRowChangeEvent" msprop:Generator_RowClassName="dtCholesterolRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cholesterol" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnCholesterol" msprop:Generator_ColumnPropNameInRow="Cholesterol" msprop:Generator_ColumnPropNameInTable="CholesterolColumn" msprop:Generator_UserColumnName="Cholesterol" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtTSH" msprop:Generator_TableClassName="dtTSHDataTable" msprop:Generator_TableVarName="tabledtTSH" msprop:Generator_RowChangedName="dtTSHRowChanged" msprop:Generator_TablePropName="dtTSH" msprop:Generator_RowDeletingName="dtTSHRowDeleting" msprop:Generator_RowChangingName="dtTSHRowChanging" msprop:Generator_RowEvHandlerName="dtTSHRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTSHRowDeleted" msprop:Generator_RowClassName="dtTSHRow" msprop:Generator_UserTableName="dtTSH" msprop:Generator_RowEvArgName="dtTSHRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TSH" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnTSH" msprop:Generator_ColumnPropNameInRow="TSH" msprop:Generator_ColumnPropNameInTable="TSHColumn" msprop:Generator_UserColumnName="TSH" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtElectrolyteProfile" msprop:Generator_TableClassName="dtElectrolyteProfileDataTable" msprop:Generator_TableVarName="tabledtElectrolyteProfile" msprop:Generator_TablePropName="dtElectrolyteProfile" msprop:Generator_RowDeletingName="dtElectrolyteProfileRowDeleting" msprop:Generator_RowChangingName="dtElectrolyteProfileRowChanging" msprop:Generator_RowEvHandlerName="dtElectrolyteProfileRowChangeEventHandler" msprop:Generator_RowDeletedName="dtElectrolyteProfileRowDeleted" msprop:Generator_UserTableName="dtElectrolyteProfile" msprop:Generator_RowChangedName="dtElectrolyteProfileRowChanged" msprop:Generator_RowEvArgName="dtElectrolyteProfileRowChangeEvent" msprop:Generator_RowClassName="dtElectrolyteProfileRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SerumSodium" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnSerumSodium" msprop:Generator_ColumnPropNameInRow="SerumSodium" msprop:Generator_ColumnPropNameInTable="SerumSodiumColumn" msprop:Generator_UserColumnName="SerumSodium" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Potassium" msprop:Generator_ColumnVarNameInTable="columnPotassium" msprop:Generator_ColumnPropNameInRow="Potassium" msprop:Generator_ColumnPropNameInTable="PotassiumColumn" msprop:Generator_UserColumnName="Potassium" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Chloride" msprop:Generator_ColumnVarNameInTable="columnChloride" msprop:Generator_ColumnPropNameInRow="Chloride" msprop:Generator_ColumnPropNameInTable="ChlorideColumn" msprop:Generator_UserColumnName="Chloride" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDengueAntigen" msprop:Generator_TableClassName="dtDengueAntigenDataTable" msprop:Generator_TableVarName="tabledtDengueAntigen" msprop:Generator_RowChangedName="dtDengueAntigenRowChanged" msprop:Generator_TablePropName="dtDengueAntigen" msprop:Generator_RowDeletingName="dtDengueAntigenRowDeleting" msprop:Generator_RowChangingName="dtDengueAntigenRowChanging" msprop:Generator_RowEvHandlerName="dtDengueAntigenRowChangeEventHandler" msprop:Generator_RowDeletedName="dtDengueAntigenRowDeleted" msprop:Generator_RowClassName="dtDengueAntigenRow" msprop:Generator_UserTableName="dtDengueAntigen" msprop:Generator_RowEvArgName="dtDengueAntigenRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NS1Antigen" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnNS1Antigen" msprop:Generator_ColumnPropNameInRow="NS1Antigen" msprop:Generator_ColumnPropNameInTable="NS1AntigenColumn" msprop:Generator_UserColumnName="NS1Antigen" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDengueAntibody" msprop:Generator_TableClassName="dtDengueAntibodyDataTable" msprop:Generator_TableVarName="tabledtDengueAntibody" msprop:Generator_TablePropName="dtDengueAntibody" msprop:Generator_RowDeletingName="dtDengueAntibodyRowDeleting" msprop:Generator_RowChangingName="dtDengueAntibodyRowChanging" msprop:Generator_RowEvHandlerName="dtDengueAntibodyRowChangeEventHandler" msprop:Generator_RowDeletedName="dtDengueAntibodyRowDeleted" msprop:Generator_UserTableName="dtDengueAntibody" msprop:Generator_RowChangedName="dtDengueAntibodyRowChanged" msprop:Generator_RowEvArgName="dtDengueAntibodyRowChangeEvent" msprop:Generator_RowClassName="dtDengueAntibodyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DengueIgG" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnDengueIgG" msprop:Generator_ColumnPropNameInRow="DengueIgG" msprop:Generator_ColumnPropNameInTable="DengueIgGColumn" msprop:Generator_UserColumnName="DengueIgG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DengueIgM" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnDengueIgM" msprop:Generator_ColumnPropNameInRow="DengueIgM" msprop:Generator_ColumnPropNameInTable="DengueIgMColumn" msprop:Generator_UserColumnName="DengueIgM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtFreeT3" msprop:Generator_TableClassName="dtFreeT3DataTable" msprop:Generator_TableVarName="tabledtFreeT3" msprop:Generator_RowChangedName="dtFreeT3RowChanged" msprop:Generator_TablePropName="dtFreeT3" msprop:Generator_RowDeletingName="dtFreeT3RowDeleting" msprop:Generator_RowChangingName="dtFreeT3RowChanging" msprop:Generator_RowEvHandlerName="dtFreeT3RowChangeEventHandler" msprop:Generator_RowDeletedName="dtFreeT3RowDeleted" msprop:Generator_RowClassName="dtFreeT3Row" msprop:Generator_UserTableName="dtFreeT3" msprop:Generator_RowEvArgName="dtFreeT3RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FreeT3" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnFreeT3" msprop:Generator_ColumnPropNameInRow="FreeT3" msprop:Generator_ColumnPropNameInTable="FreeT3Column" msprop:Generator_UserColumnName="FreeT3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtFreeT4" msprop:Generator_TableClassName="dtFreeT4DataTable" msprop:Generator_TableVarName="tabledtFreeT4" msprop:Generator_TablePropName="dtFreeT4" msprop:Generator_RowDeletingName="dtFreeT4RowDeleting" msprop:Generator_RowChangingName="dtFreeT4RowChanging" msprop:Generator_RowEvHandlerName="dtFreeT4RowChangeEventHandler" msprop:Generator_RowDeletedName="dtFreeT4RowDeleted" msprop:Generator_UserTableName="dtFreeT4" msprop:Generator_RowChangedName="dtFreeT4RowChanged" msprop:Generator_RowEvArgName="dtFreeT4RowChangeEvent" msprop:Generator_RowClassName="dtFreeT4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FreeT4" msdata:Caption="FastingBloodSugar" msprop:Generator_ColumnVarNameInTable="columnFreeT4" msprop:Generator_ColumnPropNameInRow="FreeT4" msprop:Generator_ColumnPropNameInTable="FreeT4Column" msprop:Generator_UserColumnName="FreeT4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtHIV" msprop:Generator_TableClassName="dtHIVDataTable" msprop:Generator_TableVarName="tabledtHIV" msprop:Generator_RowChangedName="dtHIVRowChanged" msprop:Generator_TablePropName="dtHIV" msprop:Generator_RowDeletingName="dtHIVRowDeleting" msprop:Generator_RowChangingName="dtHIVRowChanging" msprop:Generator_RowEvHandlerName="dtHIVRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHIVRowDeleted" msprop:Generator_RowClassName="dtHIVRow" msprop:Generator_UserTableName="dtHIV" msprop:Generator_RowEvArgName="dtHIVRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Result" msdata:Caption="Comment" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSerumProtein" msprop:Generator_TableClassName="dtSerumProteinDataTable" msprop:Generator_TableVarName="tabledtSerumProtein" msprop:Generator_TablePropName="dtSerumProtein" msprop:Generator_RowDeletingName="dtSerumProteinRowDeleting" msprop:Generator_RowChangingName="dtSerumProteinRowChanging" msprop:Generator_RowEvHandlerName="dtSerumProteinRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSerumProteinRowDeleted" msprop:Generator_UserTableName="dtSerumProtein" msprop:Generator_RowChangedName="dtSerumProteinRowChanged" msprop:Generator_RowEvArgName="dtSerumProteinRowChangeEvent" msprop:Generator_RowClassName="dtSerumProteinRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalProtein" msprop:Generator_ColumnVarNameInTable="columnTotalProtein" msprop:Generator_ColumnPropNameInRow="TotalProtein" msprop:Generator_ColumnPropNameInTable="TotalProteinColumn" msprop:Generator_UserColumnName="TotalProtein" type="xs:long" minOccurs="0" />
+              <xs:element name="ALBumin" msprop:Generator_ColumnVarNameInTable="columnALBumin" msprop:Generator_ColumnPropNameInRow="ALBumin" msprop:Generator_ColumnPropNameInTable="ALBuminColumn" msprop:Generator_UserColumnName="ALBumin" type="xs:long" minOccurs="0" />
+              <xs:element name="Globulin" msprop:Generator_ColumnVarNameInTable="columnGlobulin" msprop:Generator_ColumnPropNameInRow="Globulin" msprop:Generator_ColumnPropNameInTable="GlobulinColumn" msprop:Generator_UserColumnName="Globulin" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGRatio" msprop:Generator_ColumnVarNameInTable="columnAGRatio" msprop:Generator_ColumnPropNameInRow="AGRatio" msprop:Generator_ColumnPropNameInTable="AGRatioColumn" msprop:Generator_UserColumnName="AGRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69D9E7D7-7CB3-4A00-80A5-D6FC118AE366}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSoft.ERP.Data</RootNamespace>
+    <AssemblyName>NSoft.ERP.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Extended, Version=6.0.0.0, Culture=neutral, PublicKeyToken=05b7e29bdd433584, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.168\lib\net45\EntityFramework.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MoreLinq, Version=2.0.20029.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\morelinq.2.3.0\lib\net35\MoreLinq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ERPDBContext2.cs" />
+    <Compile Include="ERPDBContext.cs" />
+    <Compile Include="ERPDBContextInitializer.cs" />
+    <Compile Include="Migrations1\201705031633358_InitialCreate.cs" />
+    <Compile Include="Migrations1\201705031633358_InitialCreate.Designer.cs">
+      <DependentUpon>201705031633358_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations1\Configuration.cs" />
+    <Compile Include="Migrations2\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Scripts\Other\ItemCode Updation.sql" />
+    <Content Include="Scripts\Other\Privileges.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.AddPrivileges.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spAddAllPrivileges.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spAddDocumentNo.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spBinCardProcess.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spCounterSummary.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spGivenDateStockProcess.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spGoodsReceivedNoteSave.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spInitializeBackOffice.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spInitializePOSCounter.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spInvoiceSave.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spOpeningStockSave.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spPaidInPaidOutDetails.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spPurchaseSummary.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spReCalculateStock.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spReSeedTable.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spSaveUserPrivileges.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.spStockAdjustmentSave.StoredProcedure.sql" />
+    <Content Include="Scripts\Stored Procedure\dbo.TransactionLogClear.StoredProcedure.sql" />
+    <Content Include="Scripts\Table Types\dbo.UserPrivilegesLocationType.UserDefinedTableType.sql" />
+    <Content Include="Scripts\Table Types\dbo.UserPrivilegesType.UserDefinedTableType.sql" />
+    <Content Include="Scripts\Table Types\UserPrivilegesLocationType.sql" />
+    <Content Include="Scripts\Table Types\UserPrivilegesType.sql" />
+    <Content Include="Scripts\Transfer\Stored Procedure\sp_TranItem.sql" />
+    <Content Include="Scripts\Transfer\Table\[dbo].[ItemSync].sql" />
+    <Content Include="Scripts\Transfer\Trigger\[TRGItem].sql" />
+    <Content Include="Scripts\Triggers\[TRGLoyaltyPointsUpdate].sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NSoft.ERP.Domain\NSoft.ERP.Domain.csproj">
+      <Project>{9c769518-0da6-49d7-b944-e348874e863e}</Project>
+      <Name>NSoft.ERP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSoft.ERP.Utility\NSoft.ERP.Utility.csproj">
+      <Project>{5e842388-42ec-4005-b5a0-672ec074fec1}</Project>
+      <Name>NSoft.ERP.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations1\201705031633358_InitialCreate.resx">
+      <DependentUpon>201705031633358_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

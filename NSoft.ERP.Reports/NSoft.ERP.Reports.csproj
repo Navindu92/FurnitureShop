@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A70208DC-56E0-4D8C-ACFC-48D680B6C7B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSoft.ERP.Reports</RootNamespace>
+    <AssemblyName>NSoft.ERP.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom Controllers\ComboBoxCommonDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\ComboBoxCommonDropDown.Designer.cs">
+      <DependentUpon>ComboBoxCommonDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controllers\ComboBoxDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\ComboBoxDropDown.Designer.cs">
+      <DependentUpon>ComboBoxDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controllers\DateTimePickerCommon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\DateTimePickerCommon.Designer.cs">
+      <DependentUpon>DateTimePickerCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controllers\LableCommon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\LableCommon.Designer.cs">
+      <DependentUpon>LableCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controllers\TextBoxDescription.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\TextBoxDescription.Designer.cs">
+      <DependentUpon>TextBoxDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controllers\TextBoxMasterCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controllers\TextBoxMasterCode.Designer.cs">
+      <DependentUpon>TextBoxMasterCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Accounts\DsAccountsTransaction.cs">
+      <DependentUpon>DsAccountsTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Accounts\DsAccountsTransaction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAccountsTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\General\DsGeneralTransaction.cs">
+      <DependentUpon>DsGeneralTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\General\DsGeneralTransaction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsGeneralTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Inventory\Transaction\DsInventoryTransaction.cs">
+      <DependentUpon>DsInventoryTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Inventory\Transaction\DsInventoryTransaction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsInventoryTransaction.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\FrmBaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\FrmBaseReport.Designer.cs">
+      <DependentUpon>FrmBaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\FrmCounterSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\FrmCounterSummary.designer.cs">
+      <DependentUpon>FrmCounterSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\FrmPaidInPaidOutReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\FrmPaidInPaidOutReport.Designer.cs">
+      <DependentUpon>FrmPaidInPaidOutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\FrmTransactionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\FrmTransactionViewer.Designer.cs">
+      <DependentUpon>FrmTransactionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\General\FrmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\General\FrmReportViewer.Designer.cs">
+      <DependentUpon>FrmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmBinCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmBinCard.designer.cs">
+      <DependentUpon>FrmBinCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmFastMoving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmFastMoving.Designer.cs">
+      <DependentUpon>FrmFastMoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmGivenDateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmGivenDateStock.designer.cs">
+      <DependentUpon>FrmGivenDateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmNonMoving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmNonMoving.designer.cs">
+      <DependentUpon>FrmNonMoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmPurchaseSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmPurchaseSummary.Designer.cs">
+      <DependentUpon>FrmPurchaseSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmReOrderLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmReOrderLevel.Designer.cs">
+      <DependentUpon>FrmReOrderLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSalesAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSalesAnalysis.Designer.cs">
+      <DependentUpon>FrmSalesAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSalesSummary.Designer.cs">
+      <DependentUpon>FrmSalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSlowMoving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\FrmSlowMoving.designer.cs">
+      <DependentUpon>FrmSlowMoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\General\Transaction\RptPaidInPaidOutDetailsHeladiwa.cs">
+      <DependentUpon>RptPaidInPaidOutDetailsHeladiwa.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\General\Transaction\RptPaidInPaidOutDetails.cs">
+      <DependentUpon>RptPaidInPaidOutDetails.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\General\Transaction\RptCounterSummary.cs">
+      <DependentUpon>RptCounterSummary.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\InvTransaction.cs" />
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseSalesAnalysis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemWiseSalesAnalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptPurchaseReturn.cs">
+      <DependentUpon>RptPurchaseReturn.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseReOrderLevel.cs">
+      <DependentUpon>RptItemWiseReOrderLevel.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptPurchaseOrder.cs">
+      <DependentUpon>RptPurchaseOrder.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseSalesSummary.cs">
+      <DependentUpon>RptItemWiseSalesSummary.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWisePurchaseSummary.cs">
+      <DependentUpon>RptItemWisePurchaseSummary.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptStockAdjustment.cs">
+      <DependentUpon>RptStockAdjustment.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemGivenDate.cs">
+      <DependentUpon>RptItemGivenDate.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemBinCard.cs">
+      <DependentUpon>RptItemBinCard.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseNonMoving.cs">
+      <DependentUpon>RptItemWiseNonMoving.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseSlowMoving.cs">
+      <DependentUpon>RptItemWiseSlowMoving.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptItemWiseFastMoving.cs">
+      <DependentUpon>RptItemWiseFastMoving.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Inventory\Transaction\RptGoodsReceivedNote.cs">
+      <DependentUpon>RptGoodsReceivedNote.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Custom Controllers\ComboBoxCommonDropDown.resx">
+      <DependentUpon>ComboBoxCommonDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controllers\ComboBoxDropDown.resx">
+      <DependentUpon>ComboBoxDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controllers\DateTimePickerCommon.resx">
+      <DependentUpon>DateTimePickerCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controllers\LableCommon.resx">
+      <DependentUpon>LableCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controllers\TextBoxDescription.resx">
+      <DependentUpon>TextBoxDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controllers\TextBoxMasterCode.resx">
+      <DependentUpon>TextBoxMasterCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\FrmBaseReport.resx">
+      <DependentUpon>FrmBaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\FrmCounterSummary.resx">
+      <DependentUpon>FrmCounterSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\FrmPaidInPaidOutReport.resx">
+      <DependentUpon>FrmPaidInPaidOutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\FrmTransactionViewer.resx">
+      <DependentUpon>FrmTransactionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\General\FrmReportViewer.resx">
+      <DependentUpon>FrmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmBinCard.resx">
+      <DependentUpon>FrmBinCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmFastMoving.resx">
+      <DependentUpon>FrmFastMoving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmGivenDateStock.resx">
+      <DependentUpon>FrmGivenDateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmNonMoving.resx">
+      <DependentUpon>FrmNonMoving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmPurchaseSummary.resx">
+      <DependentUpon>FrmPurchaseSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmReOrderLevel.resx">
+      <DependentUpon>FrmReOrderLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmSalesAnalysis.resx">
+      <DependentUpon>FrmSalesAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmSalesSummary.resx">
+      <DependentUpon>FrmSalesSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\FrmSlowMoving.resx">
+      <DependentUpon>FrmSlowMoving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\General\Transaction\RptPaidInPaidOutDetailsHeladiwa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPaidInPaidOutDetailsHeladiwa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\General\Transaction\RptPaidInPaidOutDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPaidInPaidOutDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\General\Transaction\RptCounterSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCounterSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseSalesAnalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseSalesAnalysis.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptPurchaseReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPurchaseReturn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseReOrderLevel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseReOrderLevel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptPurchaseOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPurchaseOrder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseSalesSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseSalesSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWisePurchaseSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWisePurchaseSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptStockAdjustment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptStockAdjustment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemGivenDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemGivenDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemBinCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemBinCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseNonMoving.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseNonMoving.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseSlowMoving.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseSlowMoving.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptItemWiseFastMoving.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemWiseFastMoving.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Inventory\Transaction\RptGoodsReceivedNote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptGoodsReceivedNote.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NSoft.ERP.Domain\NSoft.ERP.Domain.csproj">
+      <Project>{9c769518-0da6-49d7-b944-e348874e863e}</Project>
+      <Name>NSoft.ERP.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSoft.ERP.Service\NSoft.ERP.Service.csproj">
+      <Project>{9383c0e1-fbd5-46b2-a8c8-61d17c114404}</Project>
+      <Name>NSoft.ERP.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSoft.ERP.Utility\NSoft.ERP.Utility.csproj">
+      <Project>{5e842388-42ec-4005-b5a0-672ec074fec1}</Project>
+      <Name>NSoft.ERP.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\Accounts\DsAccountsTransaction.xsc">
+      <DependentUpon>DsAccountsTransaction.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Accounts\DsAccountsTransaction.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAccountsTransaction.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Accounts\DsAccountsTransaction.xss">
+      <DependentUpon>DsAccountsTransaction.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\General\DsGeneralTransaction.xsc">
+      <DependentUpon>DsGeneralTransaction.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\General\DsGeneralTransaction.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsGeneralTransaction.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\General\DsGeneralTransaction.xss">
+      <DependentUpon>DsGeneralTransaction.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Inventory\Transaction\DsInventoryTransaction.xsc">
+      <DependentUpon>DsInventoryTransaction.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Inventory\Transaction\DsInventoryTransaction.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsInventoryTransaction.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Inventory\Transaction\DsInventoryTransaction.xss">
+      <DependentUpon>DsInventoryTransaction.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
