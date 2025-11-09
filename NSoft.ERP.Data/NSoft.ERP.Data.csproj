@@ -100,11 +100,6 @@
     <Compile Include="ERPDBContext2.cs" />
     <Compile Include="ERPDBContext.cs" />
     <Compile Include="ERPDBContextInitializer.cs" />
-    <Compile Include="Migrations1\201705031633358_InitialCreate.cs" />
-    <Compile Include="Migrations1\201705031633358_InitialCreate.Designer.cs">
-      <DependentUpon>201705031633358_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations1\Configuration.cs" />
     <Compile Include="Migrations2\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -152,11 +147,6 @@
       <Project>{5e842388-42ec-4005-b5a0-672ec074fec1}</Project>
       <Name>NSoft.ERP.Utility</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations1\201705031633358_InitialCreate.resx">
-      <DependentUpon>201705031633358_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

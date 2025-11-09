@@ -20,7 +20,7 @@ namespace NSoft.ERP.Data
     public class ERPDBContext : DbContext
     {
 
-        public ERPDBContext() : base(Common.connectionString)
+        public ERPDBContext() : base("SysConn")
         {
             //Database.SetInitializer<ERPDBContext>(new CreateDatabaseIfNotExists<ERPDBContext>());
             //Database.SetInitializer<ERPDBContext>(new DropCreateDatabaseIfModelChanges<ERPDBContext>());
@@ -32,8 +32,8 @@ namespace NSoft.ERP.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Database.SetInitializer<ERPDBContext>(new DropCreateDatabaseIfModelChanges<ERPDBContext>());
-            //Database.SetInitializer<ERPDBContext>(new ERPDBContextInitializer());
-            Database.SetInitializer<ERPDBContext>(null);
+            Database.SetInitializer<ERPDBContext>(new ERPDBContextInitializer());
+            //Database.SetInitializer<ERPDBContext>(null);
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
