@@ -32,8 +32,8 @@ namespace NSoft.ERP.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Database.SetInitializer<ERPDBContext>(new DropCreateDatabaseIfModelChanges<ERPDBContext>());
-            Database.SetInitializer<ERPDBContext>(new ERPDBContextInitializer());
-            //Database.SetInitializer<ERPDBContext>(null);
+            //Database.SetInitializer<ERPDBContext>(new ERPDBContextInitializer());
+            Database.SetInitializer<ERPDBContext>(null);
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
