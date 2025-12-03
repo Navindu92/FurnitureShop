@@ -367,15 +367,15 @@ namespace NSoft.ERP.UI.Windows.Inventory
                 string printerStaus = "";
                 bool isPrinterAvailable = POSPrinter.CheckPrinterAvailability(out printerStaus);
 
-                if (isPrinterAvailable)
-                {
+                //if (isPrinterAvailable)
+                //{
                     SaveCounterTransaction();
-                }
-                else
-                {
-                    FrmNoPrinter frmNoPrinter = new FrmNoPrinter(printerStaus);
-                    frmNoPrinter.ShowDialog();
-                }
+                //}
+                //else
+                //{
+                //    FrmNoPrinter frmNoPrinter = new FrmNoPrinter(printerStaus);
+                //    frmNoPrinter.ShowDialog();
+                //}
 
             }
             catch (Exception ex)
@@ -411,17 +411,17 @@ namespace NSoft.ERP.UI.Windows.Inventory
 
                 if (transactionType == 1)
                 {
-                    PrintCounterOpen();
+                    //PrintCounterOpen();
                     transactionStatus = 2;
                 }
                 else if (transactionType == 2)
                 {
-                    PrintXReading();
+                    //PrintXReading();
                     transactionStatus = 1;
                 }
                 else if (transactionType == 3)
                 {
-                    PrintXReading();
+                    //PrintXReading();
                     transactionStatus = 2;
                 }
 

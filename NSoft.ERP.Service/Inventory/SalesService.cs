@@ -1222,7 +1222,7 @@ namespace NSoft.ERP.Service.Inventory
             return CommonService.ExcecuteStoredProcedureGetDataSet("spSalesSummary", parameter);
         }
 
-        public DataSet GetReOrderLevel(long locationID,string codeFrom, string codeTo)
+        public DataSet GetReOrderLevel(long locationID, string codeFrom, string codeTo)
         {
             var parameter = new DbParameter[]
                {
@@ -1563,6 +1563,32 @@ namespace NSoft.ERP.Service.Inventory
 
             return CommonService.ExcecuteStoredProcedureGetDataSet("spSalesAnalysis", parameter).Tables[0];
 
+        }
+
+        public DataTable GetInvoicePrint(string documentNo)
+        {
+            var qry = (from ins in context.SalesSub
+                       join h in context.SalesMain on ins.SalesMainID equals h.SalesMainID
+                       join d in context.Item on ins.ItemID equals d.ItemID
+                       where h.DocumentNo == documentNo
+                       orderby ins.LineNo
+                       select new
+                       {
+                           h.DocumentNo,
+                           h.DocumentDate,
+                           ins.LineNo,
+                           d.ItemCode,
+                           ItemName = d.NameOnInvoice,
+                           d.SinhalaName,
+                           ins.Qty,
+                           ins.SellingPrice,
+                           ins.DiscountPercentage,
+                           ins.DiscountAmount,
+                           ins.NetAmount,
+                           ins.TotalAmount
+                       });
+
+            return qry.ToDataTable();
         }
     }
 }

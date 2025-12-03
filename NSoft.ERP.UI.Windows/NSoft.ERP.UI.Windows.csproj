@@ -175,6 +175,12 @@
       <DependentUpon>RptCheque.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="bin\Debug\Reports\RptInvoice.cs">
+      <DependentUpon>RptInvoice.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Custom Controllers\TextBox3DecimalPalces.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -698,6 +704,10 @@
     <EmbeddedResource Include="bin\Debug\Reports\Accounts\RptCheque.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptCheque.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Reports\RptInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInvoice.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom Controllers\ButtonNew.resx">
       <DependentUpon>ButtonNew.cs</DependentUpon>

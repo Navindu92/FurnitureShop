@@ -17,6 +17,8 @@ using System.Drawing.Printing;
 using NSoft.ERP.UI.Windows.Device;
 using NSoft.ERP.Domain.CRM;
 using NSoft.ERP.Service.CRM;
+using CrystalDecisions.CrystalReports.Engine;
+using System.IO;
 
 namespace NSoft.ERP.UI.Windows.Inventory
 {
@@ -235,11 +237,11 @@ namespace NSoft.ERP.UI.Windows.Inventory
 
                     SalesService salesService = new SalesService();
 
-                    string printerStaus = "";
-                    bool isPrinterAvailable = POSPrinter.CheckPrinterAvailability(out printerStaus);
+                    //string printerStaus = "";
+                    //bool isPrinterAvailable = POSPrinter.CheckPrinterAvailability(out printerStaus);
 
-                    if (isPrinterAvailable)
-                    {
+                    //if (isPrinterAvailable)
+                    //{
                         if (salesService.Save(formInfo, salesMain, salesSubList, salesPaymentList, loyaltyCustomer, out documentNo, counter))
                         {
                             isPaymentComplete = true;
@@ -264,13 +266,13 @@ namespace NSoft.ERP.UI.Windows.Inventory
                                 CustomerDisplay.DisplayText(balanceHeader + tempSpace + displayBalanceAmount, CustomerDisplay.DisplayAlignment.Left);
                             }
 
-                        }
                     }
-                    else
-                    {
-                        FrmNoPrinter frmNoPrinter = new FrmNoPrinter(printerStaus);
-                        frmNoPrinter.ShowDialog();
-                    }
+                    //}
+                    //else
+                    //{
+                    //    FrmNoPrinter frmNoPrinter = new FrmNoPrinter(printerStaus);
+                    //    frmNoPrinter.ShowDialog();
+                    //}
                 }
                 else
                 {
@@ -381,30 +383,47 @@ namespace NSoft.ERP.UI.Windows.Inventory
         }
         public void PrintInvoice()
         {
-            if (!isRePrint)
-            {
-                POSPrinter.PrintText(POSPrinter.eInitialize + POSPrinter.eDrawer);
-            }
+            //if (!isRePrint)
+            //{
+            //    POSPrinter.PrintText(POSPrinter.eInitialize + POSPrinter.eDrawer);
+            //}
 
-            if (counter.IsPopupPrintconfirmationConfirmation)
-            {
-                FrmPOSPrintConfirmation frmPOSPrintConfirmation = new FrmPOSPrintConfirmation();
-                frmPOSPrintConfirmation.ShowDialog();
+            //if (counter.IsPopupPrintconfirmationConfirmation)
+            //{
+            //    FrmPOSPrintConfirmation frmPOSPrintConfirmation = new FrmPOSPrintConfirmation();
+            //    frmPOSPrintConfirmation.ShowDialog();
 
-                if (!frmPOSPrintConfirmation.isConfirm)
-                {
-                    return;
-                }
-            }
-            PrintDocument printInvoice = new PrintDocument();
-            printInvoice.PrinterSettings.PrinterName = POSPrinter.printerName;
+            //    if (!frmPOSPrintConfirmation.isConfirm)
+            //    {
+            //        return;
+            //    }
+            //}
+            //PrintDocument printInvoice = new PrintDocument();
+            //printInvoice.PrinterSettings.PrinterName = POSPrinter.printerName;
 
-            printInvoice.PrintPage += new PrintPageEventHandler(pd_PrintInvoice);
+            //printInvoice.PrintPage += new PrintPageEventHandler(pd_PrintInvoice);
 
-            PrintController printController = new StandardPrintController();
-            printInvoice.PrintController = printController;
+            //PrintController printController = new StandardPrintController();
+            //printInvoice.PrintController = printController;
 
-            printInvoice.Print();
+            //printInvoice.Print();
+
+            ReportDocument rpt = new ReportDocument();
+
+            string rptPath = Path.Combine(Application.StartupPath, "Reports", "RptInvoice.rpt");
+
+            rpt.Load(rptPath);
+
+            DataTable dtInvoiceDetails = new DataTable();
+            SalesService salesService = new SalesService();
+
+            dtInvoiceDetails = salesService.GetInvoicePrint(documentNo);
+            rpt.SetDataSource(dtInvoiceDetails);
+
+            string defaultPrinter = new PrinterSettings().PrinterName;
+
+            rpt.PrintOptions.PrinterName = defaultPrinter;
+            rpt.PrintToPrinter(1, false, 0, 0);
         }
 
         private void pd_PrintInvoice(object sender, PrintPageEventArgs e)
