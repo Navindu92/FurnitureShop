@@ -1587,7 +1587,9 @@ namespace NSoft.ERP.Service.Inventory
                            ins.NetAmount,
                            ins.TotalAmount,
                            SubTotalAmount=h.TotalAmount,
-                           SubNetAmount = h.NetAmount
+                           SubNetAmount = h.NetAmount,
+                           SubTotalDiscountPercentage = h.DiscountPercentage,
+                           SubTotalDiscountAmount=h.DiscountAmount
                        });
 
             return qry.ToDataTable();
