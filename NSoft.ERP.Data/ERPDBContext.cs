@@ -20,7 +20,7 @@ namespace NSoft.ERP.Data
     public class ERPDBContext : DbContext
     {
 
-        public ERPDBContext() : base("SysConn")
+        public ERPDBContext() : base(Common.connectionString)
         {
             //Database.SetInitializer<ERPDBContext>(new CreateDatabaseIfNotExists<ERPDBContext>());
             //Database.SetInitializer<ERPDBContext>(new DropCreateDatabaseIfModelChanges<ERPDBContext>());

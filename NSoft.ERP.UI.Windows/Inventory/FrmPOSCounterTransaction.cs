@@ -364,8 +364,8 @@ namespace NSoft.ERP.UI.Windows.Inventory
                     return;
                 }
 
-                string printerStaus = "";
-                bool isPrinterAvailable = POSPrinter.CheckPrinterAvailability(out printerStaus);
+                //string printerStaus = "";
+                //bool isPrinterAvailable = POSPrinter.CheckPrinterAvailability(out printerStaus);
 
                 //if (isPrinterAvailable)
                 //{
