@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NSoft.ERP.Reports.Reports.Inventory.Transaction {
+namespace NSoft.ERP.UI.Windows.bin.Debug.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace NSoft.ERP.Reports.Reports.Inventory.Transaction {
         
         public override string FullResourceName {
             get {
-                return "NSoft.ERP.Reports.Reports.Inventory.Transaction.RptInvoice.rpt";
+                return "NSoft.ERP.UI.Windows.bin.Debug.Reports.RptInvoice.rpt";
             }
             set {
                 // Do nothing

@@ -420,6 +420,11 @@ namespace NSoft.ERP.UI.Windows.Inventory
             dtInvoiceDetails = salesService.GetInvoicePrint(documentNo);
             rpt.SetDataSource(dtInvoiceDetails);
 
+            if (isRePrint)
+            {
+                rpt.DataDefinition.FormulaFields["DocumentStatus"].Text = "" + 0 + "";
+            }
+
             string defaultPrinter = new PrinterSettings().PrinterName;
 
             rpt.PrintOptions.PrinterName = defaultPrinter;
