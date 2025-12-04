@@ -17,7 +17,7 @@
     <Shape ID="DesignTable:dtPurchaseOrder" ZOrder="5" X="20" Y="94" Height="28" Width="197" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="253" SplitterPosition="24" />
     <Shape ID="DesignTable:dtReOrderLevel" ZOrder="4" X="286" Y="110" Height="181" Width="156" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="196" />
     <Shape ID="DesignTable:dtSalesAnalysis" ZOrder="2" X="548" Y="192" Height="124" Width="155" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="86" />
-    <Shape ID="DesignTable:dtInvoice" ZOrder="1" X="436" Y="355" Height="360" Width="287" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="357" />
+    <Shape ID="DesignTable:dtInvoice" ZOrder="1" X="269" Y="350" Height="631" Width="287" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="32" SplitterPosition="627" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

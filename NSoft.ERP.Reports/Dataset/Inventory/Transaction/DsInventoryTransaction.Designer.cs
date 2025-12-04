@@ -5330,6 +5330,10 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
             
             private global::System.Data.DataColumn columnSubTotalDiscountAmount;
             
+            private global::System.Data.DataColumn columnSubNetAmount;
+            
+            private global::System.Data.DataColumn columnSubTotalAmount;
+            
             private global::System.Data.DataColumn columnNetAmount;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5519,6 +5523,22 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SubNetAmountColumn {
+                get {
+                    return this.columnSubNetAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SubTotalAmountColumn {
+                get {
+                    return this.columnSubTotalAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn NetAmountColumn {
                 get {
                     return this.columnNetAmount;
@@ -5582,6 +5602,8 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
                         decimal TotalAmount, 
                         decimal SubTotalDiscountPercentage, 
                         decimal SubTotalDiscountAmount, 
+                        decimal SubNetAmount, 
+                        decimal SubTotalAmount, 
                         decimal NetAmount) {
                 dtInvoiceRow rowdtInvoiceRow = ((dtInvoiceRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -5604,6 +5626,8 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
                         TotalAmount,
                         SubTotalDiscountPercentage,
                         SubTotalDiscountAmount,
+                        SubNetAmount,
+                        SubTotalAmount,
                         NetAmount};
                 rowdtInvoiceRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdtInvoiceRow);
@@ -5646,6 +5670,8 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
                 this.columnTotalAmount = base.Columns["TotalAmount"];
                 this.columnSubTotalDiscountPercentage = base.Columns["SubTotalDiscountPercentage"];
                 this.columnSubTotalDiscountAmount = base.Columns["SubTotalDiscountAmount"];
+                this.columnSubNetAmount = base.Columns["SubNetAmount"];
+                this.columnSubTotalAmount = base.Columns["SubTotalAmount"];
                 this.columnNetAmount = base.Columns["NetAmount"];
             }
             
@@ -5690,10 +5716,16 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
                 base.Columns.Add(this.columnSubTotalDiscountPercentage);
                 this.columnSubTotalDiscountAmount = new global::System.Data.DataColumn("SubTotalDiscountAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSubTotalDiscountAmount);
+                this.columnSubNetAmount = new global::System.Data.DataColumn("SubNetAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSubNetAmount);
+                this.columnSubTotalAmount = new global::System.Data.DataColumn("SubTotalAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSubTotalAmount);
                 this.columnNetAmount = new global::System.Data.DataColumn("NetAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNetAmount);
                 this.columnRefNo.Caption = "DocumentNo";
                 this.columnCustomer.Caption = "Supplier";
+                this.columnSubNetAmount.Caption = "NetAmount";
+                this.columnSubTotalAmount.Caption = "NetAmount";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10285,6 +10317,38 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal SubNetAmount {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtInvoice.SubNetAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SubNetAmount\' in table \'dtInvoice\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtInvoice.SubNetAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal SubTotalAmount {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledtInvoice.SubTotalAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SubTotalAmount\' in table \'dtInvoice\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtInvoice.SubTotalAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public decimal NetAmount {
                 get {
                     try {
@@ -10525,6 +10589,30 @@ namespace NSoft.ERP.Reports.Dataset.Inventory.Transaction {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetSubTotalDiscountAmountNull() {
                 this[this.tabledtInvoice.SubTotalDiscountAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSubNetAmountNull() {
+                return this.IsNull(this.tabledtInvoice.SubNetAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSubNetAmountNull() {
+                this[this.tabledtInvoice.SubNetAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSubTotalAmountNull() {
+                return this.IsNull(this.tabledtInvoice.SubTotalAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSubTotalAmountNull() {
+                this[this.tabledtInvoice.SubTotalAmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
